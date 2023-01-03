@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f1f1f1;
+}
+header {
+    width: 100%;
+    height: 50px;
+    /* background-color: #888888; */
+}
+.logo{
+   margin: 10px 10px 0 0;
+}
+main {
+    width: 100%;
+    height: 85%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+section {
+    width: 40%;
+    height: 100%;
+    /* background-color: green; */
+}
+.section1 {
+    width: 65%;
+}
+.area {
+    width: 70%;
+    height: 80px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    resize: none;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    border: none;
+    outline: none;
+}
+.advertencia {
+    font-size: 12px;
+    text-align: left;
+    margin: 0 0 10px 260px;
+}
+.contenedor-botones {
+    text-align: center;
+    margin: 200px 0 0 0;
+}
+.contenedor-limpiar {
+    margin: 30px;
+}
+.Boton-encriptar {
+    width: 20%;
+    height: 40px;
+    background-color: lightblue;
+    margin: 0 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.Boton-desencriptar {
+    width: 20%;
+    height: 40px;
+    background-color:lightcoral;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.Boton-limpiar{
+    width: 25%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    background-color: orange;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.Boton-encriptar:hover{
+    border-color: blue;
+}
+.Boton-desencriptar:hover{
+    border-color: blue;
+}
+.Boton-limpiar:hover{
+    border-color: blue;
+}
+.Boton-copiar:hover{
+    border-color: blue;
+}
+.Boton-encriptar:active{
+    border-color: red;
+}
+.Boton-desencriptar:active{
+    border-color: red;}
+.Boton-limpiar:active{
+    border-color: red;
+}
+.Boton-copiar:active{
+    border-color: red;
+}
+.section2 {
+    width: 25%;
+    height: 95%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.contenedor-munieco {
+    width: 100%;
+    height: 60%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.contenedor-h3{
+    width: 100%;
+    height: 20%;
+    text-align: center;}
+.contenedor-parrafo {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+.contenedor-resultados {
+    width: 100%;
+    height: 70%;
+    padding: 25px;
+    box-sizing: border-box;
+}
+.contenedor-copiar {
+    width: 100%;
+    height: 20%;
+}
+.Boton-copiar{
+    width: 50%;
+    height: 40px;
+    display: block;
+    margin: auto;
+    background-color: lightgreen;
+    border-radius: 10px;
+    font-weight: bold;
+}
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: lightslategray;
+    text-align: center;
+    font-weight: bold;
+}
+.ocultar {
+    display: none;
+}
+
+
+  
+  
+  
+
+
