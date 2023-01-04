@@ -22,7 +22,9 @@ function desencriptar(){
 }
 function copiar(){
     var resultado = document.querySelector(".texto-resultado");
+    var area = document.querySelector(".area");
     navigator.clipboard.writeText(resultado.textContent);
+    area.value="";
     cursor();
 }
 function recuperarTexto(){
