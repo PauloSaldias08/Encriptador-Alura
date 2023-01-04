@@ -153,15 +153,6 @@ footer {
 .ocultar {
     display: none;
 }
-@media screen and (max-width:480px){
-
-    .section1, .section2, .contenedor-munieco{
-        width: auto;
-         }
-    .footer {
-            height: 50px;
-          }
-   }
 
 
   
