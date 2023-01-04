@@ -25,14 +25,11 @@ function copiar(){
     var area = document.querySelector(".area");
     navigator.clipboard.writeText(resultado.textContent);
     area.value="";
-    cursor();
+    area.focus();
 }
 function recuperarTexto(){
     var area = document.querySelector(".area");
     return area.value;
-}
-function cursor(){
-    document.getElementById("area").focus();
 }
 function ocultarAdelante(){
     munieco.classList.add("ocultar");
