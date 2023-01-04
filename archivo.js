@@ -40,6 +40,7 @@ function limpiar(){
     var area = document.querySelector(".area");
     var resultado = document.querySelector(".texto-resultado");
     area.value ="";
+    area.focus();
     resultado.textContent="";
 }
 function encriptarTexto(mensaje){
