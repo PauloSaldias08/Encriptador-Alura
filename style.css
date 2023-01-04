@@ -155,11 +155,11 @@ footer {
 }
 @media screen and (max-width:480px){
 
-     .section1, .section2{
+    .section1, .section2, .contenedor-munieco{
         width: auto;
          }
     .footer {
-            height: auto;
+            height: 50px;
           }
    }
 
