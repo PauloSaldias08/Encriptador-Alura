@@ -26,6 +26,7 @@ function copiar(){
 }
 function recuperarTexto(){
     var area = document.querySelector(".area");
+    document.getElementById("area").focus();
     return area.value;
 }
 function ocultarAdelante(){
