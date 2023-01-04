@@ -23,6 +23,7 @@ function desencriptar(){
 function copiar(){
     var resultado = document.querySelector(".texto-resultado");
     navigator.clipboard.writeText(resultado.textContent);
+    cursor();
 }
 function recuperarTexto(){
     var area = document.querySelector(".area");
