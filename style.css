@@ -153,10 +153,9 @@ footer {
 .ocultar {
     display: none;
 }
-@media screen and (max-width:480px){
-    .section1, .section2 {
-            width: auto;
-            height: auto;
+@media screen and (max-width:380px){
+    .Boton-limpiar {
+            background-color: blue;
           }
    }
 
