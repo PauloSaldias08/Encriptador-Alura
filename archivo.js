@@ -6,15 +6,32 @@ var limpiarTexto = document.querySelector(".Boton-limpiar");
 var h3 = document.querySelector(".contenedor-h3");
 var parrafo = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
+const tarjeta1 = document.querySelector(".section1")
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
 copiarTexto.onclick = copiar;
 limpiarTexto.onclick = limpiar;
 
-function encriptar(){
-    ocultarAdelante();
-    resultado.textContent = encriptarTexto(recuperarTexto());
+function validarTexto(){
+     let erroresPrevios = tarjeta1.querySelector(".error");
+    for (let err of erroresPrevios){
+        tarjeta1.removeChild(err);
+    }
+    var mensajes = area.value;
+    let letrasValidas = "abcdefghijklmnñopqrstuvwxyz ";
+    let mensajeError = document.createDocumentFragment();
+    for (let letra of mensajes) {
+    if (!letrasValidas.includes(letra)){
+    let p = document.createElement("p");
+    p.setAtribute("class","error");
+    p.textContent = "La letra " + (letra) + " no es valida";
+    mensajeError = appendChild(p);     }
+                                }
+    tarjeta1.appendChild(mensajeError);
+    if (mensajeError.replaceChildren.length === 0) {
+        return true;      }
+        return false; 
 }
 function desencriptar(){
     ocultarAdelante();
