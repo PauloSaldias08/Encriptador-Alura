@@ -61,6 +61,7 @@ function limpiar(){
     resultado.textContent="";
 }
 function encriptarTexto(mensaje){
+    if (!validarTexto()) return;
     var texto = mensaje;
     var textoFinal = "";
 
@@ -88,6 +89,7 @@ function encriptarTexto(mensaje){
     return textoFinal  }
 
 function desencriptarTexto(mensaje){
+    if (!validarTexto()) return;
     var texto = mensaje;
     var textoFinal = "";
 
