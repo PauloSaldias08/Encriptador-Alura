@@ -13,10 +13,10 @@ botonDesencriptar.onclick = desencriptar;
 copiarTexto.onclick = copiar;
 limpiarTexto.onclick = limpiar;
 
-function validarTexto(){
+/*function validarTexto(){
      let erroresPrevios = tarjeta1.querySelector(".error");
-    for (let err of erroresPrevios){
-        tarjeta1.removeChild(err);
+    for (let error of erroresPrevios){
+        tarjeta1.removeChild(error);
     }
     var mensajes = area.value;
     let letrasValidas = "abcdefghijklmnñopqrstuvwxyz ";
@@ -25,13 +25,17 @@ function validarTexto(){
     if (!letrasValidas.includes(letra)){
     let p = document.createElement("p");
     p.setAtribute("class","error");
-    p.textContent = "La letra " + (letra) + " no es valida";
+    p.textContent = "Las letras mayusculas no son validas";
     mensajeError = appendChild(p);     }
                                 }
     tarjeta1.appendChild(mensajeError);
     if (mensajeError.replaceChildren.length === 0) {
         return true;      }
         return false; 
+}*/
+function encriptar(){
+    ocultarAdelante();
+    resultado.textContent = encriptarTexto(recuperarTexto());
 }
 function desencriptar(){
     ocultarAdelante();
@@ -61,7 +65,7 @@ function limpiar(){
     resultado.textContent="";
 }
 function encriptarTexto(mensaje){
-    if (!validarTexto()) return;
+    /*if (!validarTexto()) return;*/
     var texto = mensaje;
     var textoFinal = "";
 
@@ -89,7 +93,7 @@ function encriptarTexto(mensaje){
     return textoFinal  }
 
 function desencriptarTexto(mensaje){
-    if (!validarTexto()) return;
+    /*if (!validarTexto()) return;*/
     var texto = mensaje;
     var textoFinal = "";
 
