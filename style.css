@@ -155,7 +155,8 @@ footer {
 }
 @media screen and (max-width:480px){
     .section1, .section2 {
-            width: 100%;
+            width: auto;
+            height: auto;
           }
    }
 
