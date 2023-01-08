@@ -219,9 +219,10 @@ footer {
     .contenedor-munieco {
         width: 100%;
         height: 60%;
-        padding-top: 10px;
+        padding-top: 5px;
         box-sizing: border-box;
         overflow: auto;
+        text-align: center;
     }
    }
 
