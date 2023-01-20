@@ -6,7 +6,7 @@ var limpiarTexto = document.querySelector(".Boton-limpiar");
 var h3 = document.querySelector(".contenedor-h3");
 var parrafo = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
-const tarjeta1 = document.querySelector(".section1")
+/*const tarjeta1 = document.querySelector(".section1")*/
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
