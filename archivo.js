@@ -50,8 +50,7 @@ function copiar(){
 }
 function recuperarTexto(){
     var area = document.querySelector(".area");
-    var conversion = area.toLowerCase()
-    return conversion.value;
+    return area.value;
 }
 function ocultarAdelante(){
     munieco.classList.add("ocultar");
@@ -68,6 +67,7 @@ function limpiar(){
 function encriptarTexto(mensaje){
     /*if (!validarTexto()) return;*/
     var texto = mensaje;
+    mensaje = mensaje.toLowerCase()
     var textoFinal = "";
 
     for (var i=0; i < texto.length; i++)    {
