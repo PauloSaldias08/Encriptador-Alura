@@ -50,7 +50,8 @@ function copiar(){
 }
 function recuperarTexto(){
     var area = document.querySelector(".area");
-    return area.value;
+    var conversion = area.toLowerCase()
+    return conversion.value;
 }
 function ocultarAdelante(){
     munieco.classList.add("ocultar");
