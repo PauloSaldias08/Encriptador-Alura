@@ -40,21 +40,21 @@ section {
     border: none;
     outline: none;
 }
-
 .contenedor-botones {
     text-align: left;
-    margin: 250px 0px 0px 250px;
+    margin: 200px 0px 30px 250px;
 }
 .advertencia {
     font-size: 12px;
+    margin: 0 0 10px 0;
 }
 .Boton-encriptar {
     width: 20%;
     height: 40px;
     background-color: lightblue;
-    margin: 15px 15px 15px;
     border-radius: 10px;
     font-weight: bold;
+    margin: 0 50px 0 0;
 }
 .Boton-desencriptar {
     width: 20%;
@@ -63,10 +63,12 @@ section {
     border-radius: 10px;
     font-weight: bold;
 }
+.contenedor-limpiar{
+    margin: 0px 0px 0px 330px;
+}
 .Boton-limpiar{
     width: 25%;
     height: 40px;
-    display: block;
     text-align: center;
     background-color: orange;
     border-radius: 10px;
@@ -149,7 +151,7 @@ footer {
 .ocultar {
     display: none;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:920px){
     main {
         width: 100%;
         height: 100%;
@@ -159,7 +161,7 @@ footer {
     }
     .section1 {
         width: 100%;
-        height: auto;
+        height: 80%;
     }
     .area {
         width: 100%;
@@ -174,15 +176,13 @@ footer {
         overflow: auto;
     }
     .contenedor-botones {
-        text-align: center;
-        margin: 200px 0 0 0;
-       
+        text-align: left;
+        margin: 250px 0 20px 20px;
     }
     .advertencia {
         font-size: 12px;
-        width: 50%;
-        margin: 10px 10px 0 50px;
-        
+        width: 100%; 
+        margin: 0 0 0 20px;  
     }
     .Boton-encriptar {
         width: 30%;
@@ -199,11 +199,12 @@ footer {
         border-radius: 10px;
         font-weight: bold;
     }
+    .contenedor-limpiar{
+        margin: 0 0 0 80px;
+    }
     .Boton-limpiar{
-        width: 45%;
+        width: 55%;
         height: 40px;
-        display: block;
-        margin: 0px 0 40px 60px;
         background-color: orange;
         border-radius: 10px;
         font-weight: bold;
