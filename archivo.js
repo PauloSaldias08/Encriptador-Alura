@@ -67,7 +67,7 @@ function limpiar(){
 function encriptarTexto(mensaje){
     /*if (!validarTexto()) return;*/
     var texto = mensaje;
-    mensaje = mensaje.toLowerCase()
+    texto = texto.toLowerCase()
     var textoFinal = "";
 
     for (var i=0; i < texto.length; i++)    {
