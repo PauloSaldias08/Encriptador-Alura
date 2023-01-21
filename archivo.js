@@ -54,19 +54,15 @@ function recuperarTexto(){
     var area = document.querySelector(".area");
     return area.value;
 }
-function ocultarAtras(){
-    limpiar1.classList.add("ocultar");
-    limpiar2.classList.add("ocultar");
+function mostrarAtras(){
     munieco.classList.add("mostrar");
     h3.classList.add("mostrar");
     parrafo.classList.add("mostrar");
 }
 function ocultarAdelante(){
-    limpiar1.classList.add("mostrar");
-    limpiar2.classList.add("mostrar");
     munieco.classList.add("ocultar");
     h3.classList.add("ocultar");
-    parrafo.classList.add("ocultar");   
+    parrafo.classList.add("ocultar");  
 }
 function limpiar(){
     var area = document.querySelector(".area");
@@ -74,7 +70,7 @@ function limpiar(){
     area.value ="";
     area.focus();
     resultado.textContent="";
-    ocultarAtras();
+    mostrarAtras();
 }
 function encriptarTexto(mensaje){
     /*if (!validarTexto()) return;*/

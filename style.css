@@ -149,11 +149,11 @@ footer {
     text-align: center;
     font-weight: bold;
 }
-.ocultar {
-    display: none;
-}
 .mostrar {
     display: block;
+}
+.ocultar {
+    display: none;
 }
 @media screen and (max-width:920px){
     main {
