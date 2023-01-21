@@ -6,6 +6,8 @@ var limpiarTexto = document.querySelector(".Boton-limpiar");
 var h3 = document.querySelector(".contenedor-h3");
 var parrafo = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
+var limpiar1 = document.querySelector(".contenedor-resultados");
+var limpiar2 = document.querySelector(".contenedor-copiar");
 /*const tarjeta1 = document.querySelector(".section1")*/
 
 botonEncriptar.onclick = encriptar;
@@ -57,12 +59,17 @@ function ocultarAdelante(){
     h3.classList.add("ocultar");
     parrafo.classList.add("ocultar");
 }
+function ocultarAtras(){
+    limpiar1.classList.add("ocultar");
+    limpiar2.classList.add("ocultar");
+}
 function limpiar(){
     var area = document.querySelector(".area");
     var resultado = document.querySelector(".texto-resultado");
     area.value ="";
     area.focus();
     resultado.textContent="";
+    ocultarAtras();
 }
 function encriptarTexto(mensaje){
     /*if (!validarTexto()) return;*/

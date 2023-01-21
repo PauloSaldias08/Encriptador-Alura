@@ -90,7 +90,8 @@ section {
     border-color: red;
 }
 .Boton-desencriptar:active{
-    border-color: red;}
+    border-color: red;
+}
 .Boton-limpiar:active{
     border-color: red;
 }
@@ -150,6 +151,9 @@ footer {
 }
 .ocultar {
     display: none;
+}
+.mostrar {
+    visibility: hidden;
 }
 @media screen and (max-width:920px){
     main {
