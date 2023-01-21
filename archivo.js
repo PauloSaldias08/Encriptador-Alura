@@ -73,11 +73,9 @@ function limpiar(){
     mostrarAtras();
 }
 function encriptarTexto(mensaje){
-    /*if (!validarTexto()) return;*/
     var texto = mensaje;
     texto = texto.toLowerCase()
     var textoFinal = "";
-
     for (var i=0; i < texto.length; i++)    {
 
         if(texto[i]=="a") {
@@ -102,10 +100,8 @@ function encriptarTexto(mensaje){
     return textoFinal  }
 
 function desencriptarTexto(mensaje){
-    /*if (!validarTexto()) return;*/
     var texto = mensaje;
     var textoFinal = "";
-
     for (var i=0; i < texto.length; i++)    {
 
         if(texto[i]=="a") {
