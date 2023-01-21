@@ -153,7 +153,7 @@ footer {
     display: none;
 }
 .mostrar {
-    visibility: hidden;
+    display: block;
 }
 @media screen and (max-width:920px){
     main {

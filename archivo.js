@@ -54,14 +54,19 @@ function recuperarTexto(){
     var area = document.querySelector(".area");
     return area.value;
 }
-function ocultarAdelante(){
-    munieco.classList.add("ocultar");
-    h3.classList.add("ocultar");
-    parrafo.classList.add("ocultar");
-}
 function ocultarAtras(){
     limpiar1.classList.add("ocultar");
     limpiar2.classList.add("ocultar");
+    munieco.classList.add("mostrar");
+    h3.classList.add("mostrar");
+    parrafo.classList.add("mostrar");
+}
+function ocultarAdelante(){
+    limpiar1.classList.add("mostrar");
+    limpiar2.classList.add("mostrar");
+    munieco.classList.add("ocultar");
+    h3.classList.add("ocultar");
+    parrafo.classList.add("ocultar");   
 }
 function limpiar(){
     var area = document.querySelector(".area");
