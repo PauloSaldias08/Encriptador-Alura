@@ -8,33 +8,12 @@ var parrafo = document.querySelector(".contenedor-parrafo");
 var resultado = document.querySelector(".texto-resultado");
 var limpiar1 = document.querySelector(".contenedor-resultados");
 var limpiar2 = document.querySelector(".contenedor-copiar");
-/*const tarjeta1 = document.querySelector(".section1")*/
 
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
 copiarTexto.onclick = copiar;
 limpiarTexto.onclick = limpiar;
 
-/*function validarTexto(){
-     let erroresPrevios = tarjeta1.querySelector(".error");
-    for (let error of erroresPrevios){
-        tarjeta1.removeChild(error);
-    }
-    var mensajes = area.value;
-    let letrasValidas = "abcdefghijklmnñopqrstuvwxyz ";
-    let mensajeError = document.createDocumentFragment();
-    for (let letra of mensajes) {
-    if (!letrasValidas.includes(letra)){
-    let p = document.createElement("p");
-    p.setAtribute("class","error");
-    p.textContent = "Las letras mayusculas no son validas";
-    mensajeError = appendChild(p);     }
-                                }
-    tarjeta1.appendChild(mensajeError);
-    if (mensajeError.replaceChildren.length === 0) {
-        return true;      }
-        return false; 
-}*/
 function encriptar(){
     ocultarAdelante();
     resultado.textContent = encriptarTexto(recuperarTexto());
@@ -54,11 +33,6 @@ function recuperarTexto(){
     var area = document.querySelector(".area");
     return area.value;
 }
-function mostrarAtras(){
-    munieco.classList.add("mostrar");
-    h3.classList.add("mostrar");
-    parrafo.classList.add("mostrar");
-}
 function ocultarAdelante(){
     munieco.classList.add("ocultar");
     h3.classList.add("ocultar");
@@ -70,7 +44,6 @@ function limpiar(){
     area.value ="";
     area.focus();
     resultado.textContent="";
-    mostrarAtras();
 }
 function encriptarTexto(mensaje){
     var texto = mensaje;
