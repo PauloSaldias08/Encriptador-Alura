@@ -38,12 +38,18 @@ function ocultarAdelante(){
     h3.classList.add("ocultar");
     parrafo.classList.add("ocultar");  
 }
+function mostrarAdelante(){
+    munieco.classList.remove("ocultar");
+    h3.classList.remove("ocultar");
+    parrafo.classList.remove("ocultar");  
+}
 function limpiar(){
     var area = document.querySelector(".area");
     var resultado = document.querySelector(".texto-resultado");
     area.value ="";
     area.focus();
     resultado.textContent="";
+    mostrarAdelante();
 }
 function encriptarTexto(mensaje){
     var texto = mensaje;
